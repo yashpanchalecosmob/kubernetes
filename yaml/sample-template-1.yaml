@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: deployment/pod/replicaset/service 
+metadata: data about the object
+        name:
+        labels:
+                app: myapp
+spec:
