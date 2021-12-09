@@ -12,9 +12,9 @@ sudo yum-config-manager --add-repo \
   https://download.docker.com/linux/centos/docker-ce.repo
 
 sudo yum update -y && sudo yum install -y \
-  containerd.io-1.2.13 \
-  docker-ce-19.03.11 \
-  docker-ce-cli-19.03.11
+  containerd.io-1.5.0 \
+  docker-ce-20.10.7 \
+  docker-ce-cli-20.10.7
 
 sudo mkdir -p /etc/docker
 
@@ -40,7 +40,7 @@ sudo systemctl daemon-reload
 sudo systemctl enable docker
 sudo systemctl restart docker
 
-wget https://github.com/docker/compose/releases/download/1.27.4/docker-compose-Linux-x86_64
+wget https://github.com/docker/compose/releases/download/v2.2.2/docker-compose-Linux-x86_64
 mv docker-compose-Linux-x86_64 /usr/bin/docker-compose
 chmod +x /usr/bin/docker-compose
 
